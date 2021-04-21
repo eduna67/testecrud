@@ -1,9 +1,12 @@
+import 'package:crud/app/view/contact_form.dart';
+import 'package:crud/app/view/contact_list.dart';
 import 'package:flutter/material.dart';
-
-import 'view/my_home_page.dart';
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+  static const ROTA_HOME = '/';
+  static const ROTA_CAD_CONTATO = 'contact_form';
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,7 +16,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo de Crud'),
+      routes: {
+        ROTA_HOME: (context) => ContactList(),
+        ROTA_CAD_CONTATO: (context) => ContactForm()
+      },
     );
   }
 }

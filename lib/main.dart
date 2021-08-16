@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'app/my_app.dart';
 
-void main() { // comentario teste
+void main() { 
   runApp(MyApp());
 }
 

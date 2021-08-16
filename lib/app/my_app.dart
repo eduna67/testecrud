@@ -1,11 +1,13 @@
-import 'package:crud/app/view/contact_form.dart';
-import 'package:crud/app/view/contact_list.dart';
+
 import 'package:flutter/material.dart';
+import 'package:crud/app/view/contact_list.dart';
+//import 'view/contact_form.dart';
+import 'package:crud/app/view/contact_form.dart';
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   static const ROTA_HOME = '/';
-  static const ROTA_CAD_CONTATO = 'contact_form';
+  static const ROTA_CAD_CONTATO = '/contact_form';
 
   @override
   Widget build(BuildContext context) {
